@@ -14,12 +14,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         listView = (ListView)findViewById(R.id.listView);
-
         myAdapter = new MyAdapter();
+        listView.setAdapter(myAdapter);
 
-        myAdapter.add("한수","123");
-        myAdapter.add("한수","123");
-        myAdapter.add("한수","123");
-
+        for (int i=0; i<10; i++) {
+            myAdapter.add("한수", "123");
+            myAdapter.add("한수", "123");
+            myAdapter.add("한수", "123");
+        }
     }
 }

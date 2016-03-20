@@ -3,6 +3,7 @@ package com.corcow.hw.samplelistview;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,7 +46,6 @@ public class MyAdapter extends BaseAdapter {
         } else {
             view = (ItemView) convertView;
         }
-
         view.setItemText(items.get(position));
         return view;
     }

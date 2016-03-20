@@ -18,7 +18,6 @@ public class ItemView extends FrameLayout {
     }
 
     public void init() {
-
         inflate(getContext(),R.layout.view_item,this);
 
         nameText = (TextView)findViewById(R.id.nameText);
@@ -26,7 +25,6 @@ public class ItemView extends FrameLayout {
     }
 
     public void setItemText(ViewItem item){
-
         nameText.setText(item.name);
         messageText.setText(item.message);
     }
